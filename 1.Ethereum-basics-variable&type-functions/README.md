@@ -35,3 +35,32 @@ contract Helloworld {
 * Also notice gas. Every time a contract is deployed and modified, nodes on the Ethereum network must verify the contract. It's referred to as being redundantly parallel, as a way to reach consensus. 
 
 * Gas is the name for the execution fee that senders of transactions (in our case, senders of a smart contract transaction) will pay for verification.
+
+### Smart Contract Variables & Types
+ * The most simple concept in any language is the variable. Because Solidity is statically typed (that is, the type of the variable must be defined before compile time), you must specify the type of the variable.
+
+#### Data types
+
+* bool
+> This is a Boolean, which returns true or false.
+
+* int / uint
+> Both int and uint represent integers, or number values. The primary difference between int and uint (Unsigned Integer), is that int can hold negative numbers as values.
+
+* address
+>The address type represents a 20 byte value, which is meant to store an Ethereum address. Variables that are typed as address also have members, including balance and transfer.
+
+* bytes1 through 32
+> This is a fixed-size byte array.
+
+* bytes
+> A dynamically-sized byte array.
+
+* string
+> A dynamically signed string.
+
+* mapping
+> Hash tables with key types and value types. We will look at mappings more in depth later on in the course.
+
+* struct
+> Structs allow you to define new types. We will also cover this more in depth shortly.
