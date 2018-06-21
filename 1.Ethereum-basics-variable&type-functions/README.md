@@ -118,3 +118,30 @@ contract Coursetro {
     
 }
 ```
+### Setting Variables in Solidity 
+
+* We eliminated the constructor and replaced with setter and getter functions
+
+* We have two functions, setValue() and getValue().
+
+* setInstructor accepts 2 parameters, _fName and _age. Once called, we set our string fName to the returned _fName, and same with age.
+
+* Then, our getInstructor() function is defined as being constant, and it returns a string and a uint.
+
+```Solidity
+pragma solidity ^0.4.18;
+contract Coursetro {
+    
+   string public fName ;
+   uint public age ; // since age can not be nagative
+     function setInstructor(string _fName, uint _age) public {
+       fName = _fName;
+       age = _age;
+   }
+   
+   function getInstructor() public constant returns (string, uint) {
+       return (fName, age);
+   }
+    
+}
+```
