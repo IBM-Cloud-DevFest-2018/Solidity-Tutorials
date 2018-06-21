@@ -68,7 +68,7 @@ contract Helloworld {
 #### Lets define a simple smart contract
 ``` Solidity
 pragma solidity ^0.4.18;
-contract Coursetro {
+contract Helloworld {
     
    string fName = 'Saif';
    uint age = 24; // since age can not be nagative
@@ -93,7 +93,7 @@ Solidity has four types of visibilities for both functions and variables:
 
 ```Solidity
 pragma solidity ^0.4.18;
-contract Coursetro {
+contract Helloworld {
     
    string public fName = 'Saif';
    uint public age = 24; // since age can not be nagative
@@ -107,7 +107,7 @@ contract Coursetro {
 * Let's re-adjust our code to work with a constructor:
 ```Solidity
 pragma solidity ^0.4.18;
-contract Coursetro {
+contract Helloworld {
     
    string public fName ;
    uint public age ; // since age can not be nagative
@@ -121,7 +121,7 @@ contract Coursetro {
 ### Setting Variables in Solidity 
 ```Solidity
 pragma solidity ^0.4.18;
-contract Coursetro {
+contract Helloworld {
     
    string public fName ;
    uint public age ; // since age can not be nagative

@@ -8,3 +8,4 @@
 * The purpose of the Remix IDE is to allow you to write and deploy Solidity smart contracts. It also provides you with useful debugging features.
 
 ![remix](1.Ethereum-basics-variable&type-functions/1.png)
+
