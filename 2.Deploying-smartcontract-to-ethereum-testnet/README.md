@@ -70,6 +70,6 @@ $ truffle console
 > app.setInstructor("saif",24)
 > app.getInstructor.call()
 
-![6](6.png)
+![7](7.png)
 > On success !
 * Note:- We use ```.call()``` to get data from blockchain, and when we need to write data on blockchain we do not use ```.call()```
