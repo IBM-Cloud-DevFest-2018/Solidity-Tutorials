@@ -102,23 +102,6 @@ contract Coursetro {
 ```
 
 ### Smart Contract Constructor
-```Solidity
-pragma solidity ^0.4.18;
-contract Coursetro {
-    
-   string public fName ;
-   uint public age ; // since age can not be nagative
-     function setInstructor(string _fName, uint _age) public {
-       fName = _fName;
-       age = _age;
-   }
-   
-   function getInstructor() public constant returns (string, uint) {
-       return (fName, age);
-   }
-    
-}
-```
 * Every smart contract has a constructor function. This constructor is called when a contract is created. Inside of it, you can define the values of variables.
 
 * Let's re-adjust our code to work with a constructor:
@@ -136,7 +119,23 @@ contract Coursetro {
 }
 ```
 ### Setting Variables in Solidity 
-
+```Solidity
+pragma solidity ^0.4.18;
+contract Coursetro {
+    
+   string public fName ;
+   uint public age ; // since age can not be nagative
+     function setInstructor(string _fName, uint _age) public {
+       fName = _fName;
+       age = _age;
+   }
+   
+   function getInstructor() public constant returns (string, uint) {
+       return (fName, age);
+   }
+    
+}
+```
 * We eliminated the constructor and replaced with setter and getter functions
 
 * We have two functions, setValue() and getValue().
