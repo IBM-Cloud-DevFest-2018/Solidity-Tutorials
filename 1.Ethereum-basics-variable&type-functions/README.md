@@ -138,7 +138,7 @@ contract Helloworld {
 ```
 * We eliminated the constructor and replaced with setter and getter functions
 
-* We have two functions, setValue() and getValue().
+* We have two functions, setInstructor() and getInstructor().
 
 * setInstructor accepts 2 parameters, _fName and _age. Once called, we set our string fName to the returned _fName, and same with age.
 
