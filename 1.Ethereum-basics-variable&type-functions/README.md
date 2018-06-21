@@ -64,3 +64,57 @@ contract Helloworld {
 
 * struct
 > Structs allow you to define new types. We will also cover this more in depth shortly.
+
+#### Lets define a simple smart contract
+``` Solidity
+pragma solidity ^0.4.18;
+contract Coursetro {
+    
+   string fName = 'Saif';
+   uint age = 24; // since age can not be nagative
+    
+}
+```
+
+### Public and Private concept in solidity 
+Solidity has four types of visibilities for both functions and variables:
+
+* Public
+> This allows you to define functions or variables that can be called internally or through messages.
+
+* Private
+> Private variables and functions are only available to the current contract and not derived contracts.
+
+* Internal
+> Fuctions and variables that can only be accessed internally (current contract or derived).
+
+* External
+> Functions that can be called from other contracts and transactions. They cannot be called internally, except with "this.functionName()"
+
+```Solidity
+pragma solidity ^0.4.18;
+contract Coursetro {
+    
+   string public fName = 'Saif';
+   uint public age = 24; // since age can not be nagative
+    
+}
+```
+
+### Smart Contract Constructor
+* Every smart contract has a constructor function. This constructor is called when a contract is created. Inside of it, you can define the values of variables.
+
+* Let's re-adjust our code to work with a constructor:
+```Solidity
+pragma solidity ^0.4.18;
+contract Coursetro {
+    
+   string public fName ;
+   uint public age ; // since age can not be nagative
+   function Helloworld() public {
+       fName = 'Saif';
+       age = 24;
+   }
+    
+}
+```
