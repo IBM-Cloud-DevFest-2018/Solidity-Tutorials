@@ -17,8 +17,21 @@
 ```solidity
 pragma solidity ^0.4.18;
 
-contract Coursetro {
+contract Helloworld {
     
 }
 ```
+* The very first line defines the version of solidity you're going to use.
+* Next, you define the contract and its name and open it up like a JavaScript class.
+* Once you are done writting the smart contract, choose JavaScript VM as a environment then click on the deploy button in Remix IDE
 
+![2](2.png)
+
+* Click on details to provide you with more information
+![3](3.png)
+
+* Notice there's a contractAddress, this is where the smart contract actually lives. No, it's not live on the Ethereum Blockchain because right now, we're simply working within the Javascript EVM.
+
+* Also notice gas. Every time a contract is deployed and modified, nodes on the Ethereum network must verify the contract. It's referred to as being redundantly parallel, as a way to reach consensus. 
+
+* Gas is the name for the execution fee that senders of transactions (in our case, senders of a smart contract transaction) will pay for verification.
