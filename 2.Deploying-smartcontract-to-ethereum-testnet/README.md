@@ -15,7 +15,7 @@ $ truffle init
 
 ``` Solidity
 pragma solidity ^0.4.18;
-contract Coursetro {
+contract Helloworld {
     
    string public fName ;
    uint public age ; // since age can not be nagative
